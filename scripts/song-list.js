@@ -16,7 +16,7 @@
 
 
      song.element.on('click', event => {
-       player.playPause(song);
+       helper.playPauseAndUpdate(song);
      });
 
 

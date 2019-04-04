@@ -1,6 +1,6 @@
 {
    $('button#play-pause').on('click', function() {
-     player.playPause();
+     helper.playPauseAndUpdate();
      $(this).attr('playState', player.playState);
    });
 
@@ -12,7 +12,7 @@
      const nextSong = album.songs[nextSongIndex];
      if (nextSongIndex >= album.songs.length) { return; }
 
-     player.playPause(nextSong);
+     helper.playPauseAndUpdate(nextSong);
   });
 
    $('button#previous').on('click', function() {
@@ -23,6 +23,6 @@
       const previousSong = album.songs[previousSongIndex];
       if (previousSongIndex >= album.songs.length) { return; }
 
-     player.playPause(previousSong);
+     helper.playPauseAndUpdate(previousSong);
   });
 }
