@@ -42,4 +42,3 @@
 
      helper.playPauseAndUpdate(previousSong);
   });
-}
